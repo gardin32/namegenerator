@@ -10,7 +10,7 @@
   <body>
      <div x-data="{
     names: ['Walter', 'Jesse', 'Gus', 'Saul', 'Hank', 'Skyler', 'Ted', 'Marie', 'Tuco', 'Mike'],
-    current: 'Click the button!'
+    current: 'Click to get a random name!'
   }">
     <h1 x-text="current"></h1>
     <button @click="current = names[Math.floor(Math.random() * names.length)]">
